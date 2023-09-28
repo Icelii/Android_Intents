@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PRACTICA 3</string>
+    <string name="texto1">Bienvenido!!! :^)</string>
+    <string name="boton1">Ir a la otra actividad</string>
+    <string name="intentn1">Intent 1</string>
+    <string name="intentn2">Intent 2</string>
+    <string name="intentn3">Intent 3</string>
+    <string name="intentn4">Intent 4</string>
+</resources>

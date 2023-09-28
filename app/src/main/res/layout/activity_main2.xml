@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/tituloo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mi app"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        app:layout_constraintVertical_bias="0"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutexp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloo"
+        >
+
+        <TextView
+            android:id="@+id/exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intents explicitos"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="22dp"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/intent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Intent 1: Abrir calendario"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/blue_navi"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/intent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Intent 2: Enviar email"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/blue_navi"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/intent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Intent 3: Ver ubicación en maps"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/blue_navi"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/intent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Intent 4: Compartir texto"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/blue_navi"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/implicitos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intents implicitos"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="22dp"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/intentin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Intent 1: Abrir app de musica"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/blue_navi"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/intentin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Intent 2: Ver todos los contactos"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/blue_navi"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/intentin3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Intent 3: Abrir camara"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/blue_navi"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/intentin4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Intent 4: Abrir video en youtube"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/blue_navi"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
