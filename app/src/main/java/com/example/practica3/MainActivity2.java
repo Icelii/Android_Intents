@@ -33,8 +33,7 @@ public class MainActivity2 extends AppCompatActivity {
         });
 
         intent2.setOnClickListener(view -> {
-            Intent i2 = new Intent(Intent.ACTION_SENDTO);
-            i2.setData(Uri.parse("mailto:22170107@uttcampus.edu.mx"));
+            Intent i2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=HDQol8FGBOA&ab_channel=MAAU2"));
             startActivity(i2);
         });
 
@@ -44,10 +43,10 @@ public class MainActivity2 extends AppCompatActivity {
         });
 
         intent4.setOnClickListener(view ->{
-            Intent i4 = new Intent(Intent.ACTION_SEND);
-            i4.setType("text/plain");
-            i4.putExtra(Intent.EXTRA_TEXT, "HOLA!!! COMPARTE ESTO :^)");
-            startActivity(Intent.createChooser(i4, "Compartir en: "));
+            String numeroAMarcar = "8712599862";
+            Intent i4 = new Intent(Intent.ACTION_DIAL);
+            i4.setData(Uri.parse("tel:" + numeroAMarcar));
+            startActivity(i4);
         });
 
         /* IMPLICITOS */
@@ -57,8 +56,10 @@ public class MainActivity2 extends AppCompatActivity {
         });
 
         intentin2.setOnClickListener(view ->{
-            Intent in2 = new Intent(Intent.ACTION_VIEW, Uri.parse("content://contacts/people/"));
-            startActivity(in2);
+            Intent in2 = new Intent(Intent.ACTION_SEND);
+            in2.setType("text/plain");
+            in2.putExtra(Intent.EXTRA_TEXT, "HOLA!!! COMPARTE ESTO :^)");
+            startActivity(Intent.createChooser(in2, "Compartir en: "));
         });
 
         intentin3.setOnClickListener(view ->{
@@ -67,7 +68,8 @@ public class MainActivity2 extends AppCompatActivity {
         });
 
         intentin4.setOnClickListener(view -> {
-            Intent in4 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=HDQol8FGBOA&ab_channel=MAAU2"));
+            Intent in4 = new Intent(Intent.ACTION_SENDTO);
+            in4.setData(Uri.parse("mailto:22170107@uttcampus.edu.mx"));
             startActivity(in4);
         });
 

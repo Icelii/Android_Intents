@@ -18,6 +18,19 @@
         android:textColor="@color/black"
         />
 
+    <TextView
+        android:id="@+id/contador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btn1"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        />
+
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
